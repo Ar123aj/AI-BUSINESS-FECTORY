@@ -1,0 +1,2 @@
+worker: python master_controller.py
+

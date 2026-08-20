@@ -1,0 +1,15 @@
+{
+  "store_id": "455465",
+  "agents": {
+    "seo_agent": { "variant_id": "2036613", "variant_name": "Standard Report" },
+    "leadgen_agent": { "variant_id": "2037958", "variant_name": "Setup Package" },
+    "python_agent": { "variant_id": "2037960", "variant_name": "Script Delivery" },
+    "digital_course_agent": { "variant_id": "2037970", "variant_name": "Course Access" },
+    "data_agent": { "variant_id": "2037975", "variant_name": "Dashboard Build" },
+    "video_agent": { "variant_id": "2037979", "variant_name": "Video Project" },
+    "affiliate_agent": { "variant_id": "2037987", "variant_name": "Monthly Pack" },
+    "ads_agent": { "variant_id": "2038009", "variant_name": "Campaign Setup" },
+    "voicebot_agent": { "variant_id": "2038011", "variant_name": "Bot Setup" },
+    "web_agent": { "variant_id": "2038017", "variant_name": "Web Site Delivery" }
+  }
+}

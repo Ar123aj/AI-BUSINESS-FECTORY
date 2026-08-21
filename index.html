@@ -72,24 +72,31 @@
     <!-- Activation Section -->
     <section id="activation">
       <h2>Activate Service</h2>
-      <form action="/activate-seo-agent.php" method="POST">
-        <label>Agent Name:</label>
-        <input type="text" name="agent_name" required>
+      <form action="https://script.google.com/macros/s/AKfycbx57IW3g3FT_J-85RGEsPUxXrIz9eCNaLc5RCW1NQKShXlwv7hDT-c5tiiW0fUwtCG3L/exec" method="POST">
+         <label>Agent Name:</label>
+         <input type="text" name="agent_name" required>
 
-        <label>Your Name:</label>
-        <input type="text" name="name" required>
+         <label>Your Name:</label>
+         <input type="text" name="name" required>
 
-        <label>Your Email:</label>
-        <input type="email" name="email" required>
+         <label>Your Email:</label>
+         <input type="email" name="email" required>
 
-        <label>Gumroad Order ID:</label>
-        <input type="text" name="order_id" required>
+         <label>Gumroad Order ID:</label>
+         <input type="text" name="order_id" required>
 
-        <label>Your Website URL:</label>
-        <input type="url" name="website_url" required>
+         <label>Your Website URL:</label>
+         <input type="url" name="website_url" required>
 
-        <button type="submit">Activate Service</button>
-      </form>
+         <label>Agent Work Status:</label>
+         <select name="status" required>
+         <option value="Working">Working</option>
+         <option value="Not Working">Not Working</option>
+  </select>
+
+  <button type="submit">Activate Service</button>
+</form>
+
     </section>
 
     <!-- Blog Section -->
@@ -111,7 +118,7 @@
   </main>
 
   <footer>
-    <p>© 2026 Jitender Digital Hub </p>
+    <p>© 2026 AI-business-fectory</p>
   </footer>
 </body>
 </html>

@@ -59,7 +59,10 @@
     <input type="email" name="email" placeholder="Email Address" required>
     <input type="text" name="order_id" placeholder="Order ID" required>
     <input type="url" name="website_url" placeholder="Website URL" required>
-    <input type="text" name="status" placeholder="Status" required>
+
+    <!-- Hidden status field (customer ko nahi dikhega) -->
+    <input type="hidden" name="status" id="statusField" value="">
+
     <button type="submit">Activate</button>
   </form>
 
@@ -67,14 +70,20 @@
     document.getElementById("activationForm").addEventListener("submit", async function(e) {
       e.preventDefault();
       const form = e.target;
+      const statusField = document.getElementById("statusField");
+
       try {
         await fetch(form.action, {
           method: "POST",
           body: new FormData(form)
         });
+        // ✅ Success hone par status set karo
+        statusField.value = "Working";
         window.location.href = "activation_success.html";
       } catch (err) {
-        alert("Error submitting form: " + err);
+        // ❌ Fail hone par status set karo
+        statusField.value = "Not Working";
+        alert("Activation failed. Please try again.");
       }
     });
   </script>

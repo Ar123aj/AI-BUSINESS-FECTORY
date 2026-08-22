@@ -72,30 +72,25 @@
     <!-- Activation Section -->
     <section id="activation">
       <h2>Activate Service</h2>
-      <form action="https://script.google.com/macros/s/AKfycbw2FjzCs2pzm4X18EsGQ6oO33akkI1WcCXxzBDJd0ouO6zNI01wHMwTj2N47LS2fys3/exec" method="POST">
+      <form action="YOUR_WEB_APP_URL" method="POST">
          <label>Agent Name:</label>
-         <input type="text" name="agent_name" required>
+         <input type="text" name="agent_name" required><br><br>
 
-         <label>Your Name:</label>
-         <input type="text" name="name" required>
+         <label>Customer Name:</label>
+         <input type="text" name="name" required><br><br>
 
-         <label>Your Email:</label>
-         <input type="email" name="email" required>
+         <label>Email:</label>
+         <input type="email" name="email" required><br><br>
 
-         <label>Gumroad Order ID:</label>
-         <input type="text" name="order_id" required>
+         <label>Order ID:</label>
+         <input type="text" name="order_id" required><br><br>
 
-         <label>Your Website URL:</label>
-         <input type="url" name="website_url" required>
+         <label>Website URL:</label>
+         <input type="text" name="website_url"><br><br>
 
-         <label>Agent Work Status:</label>
-         <select name="status" required>
-         <option value="Working">Working</option>
-         <option value="Not Working">Not Working</option>
-  </select>
+         <button type="submit">Activate Agent</button>
+      </form>
 
-  <button type="submit">Activate Service</button>
-</form>
 
     </section>
 
